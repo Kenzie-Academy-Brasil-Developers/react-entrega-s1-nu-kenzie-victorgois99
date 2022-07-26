@@ -1,0 +1,32 @@
+* {
+  font-family: "Nunito";
+}
+
+.geral {
+  width: 40%;
+  margin-top: 20px;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 2px 12px;
+  background-color: blue;
+}
+
+.valorTotal {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.valorTotal h2 {
+  color: #212529;
+  font-size: 16px;
+}
+
+.valorTotal p {
+  color: #fd377e;
+  font-weight: 700;
+}
+
+.divP {
+  font-size: 14px;
+}
