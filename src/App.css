@@ -29,3 +29,23 @@ main{
   width: 70%;
   margin: 40px auto 0;
 }
+
+.divPrincipal{
+  display: flex;
+  width: 100%;
+}
+
+.divMainAside{
+  display: flex;
+  justify-content: space-between;
+  width: 84%;
+}
+
+.divMainAside main{
+  margin: 0 auto;
+  width: 60%;
+}
+
+.divMainAside aside{
+  width: 40%;
+}

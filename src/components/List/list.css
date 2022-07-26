@@ -1,13 +1,35 @@
-.geral{
-    display: flex;
-    justify-content: space-between;
+*{
+    font-family: "Nunito";
 }
 
-.list{
-    display: flex;
-    justify-content: space-between;
+.geralList {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 20px;
+  margin-top: 40px;
 }
 
-.list li{
-    list-style: none;
+.geralList p {
+  color: #212529;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.list button {
+    border-radius: 8px;
+    border: none;
+    padding: 2px 16px;
+    height: 40px;
+    background-color: #E9ECEF;
+    color: #343A40;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0 6px;
+}
+
+.list button:hover{
+    background-color:#FD377E;
+    color: #E9ECEF;
 }

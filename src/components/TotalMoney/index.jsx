@@ -1,11 +1,11 @@
 import "./totalMoney.css";
 
-function TotalMoney(){
+function TotalMoney({listTransactions}){
     return(
-        <div className="geral">
+        <div className="geralValor">
             <div className="valorTotal">
                 <h2>Valor Total:</h2>
-                <p>R$:</p>
+                <p>R$: {listTransactions.reduce((acc, cv) => acc + Number (cv.value),0)}</p>
             </div>
             <div className="divP">
                 <p>O valor se refere ao saldo</p>

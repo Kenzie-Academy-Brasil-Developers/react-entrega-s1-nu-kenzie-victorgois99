@@ -2,13 +2,15 @@
   font-family: "Nunito";
 }
 
-.geral {
+.geralValor{
   width: 40%;
   margin-top: 20px;
   border: 1px solid #e9ecef;
   border-radius: 8px;
-  padding: 2px 12px;
-  background-color: blue;
+  padding: 20px;
+  margin: 0 auto;
+  /* display: none; */
+
 }
 
 .valorTotal {

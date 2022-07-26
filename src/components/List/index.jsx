@@ -1,15 +1,24 @@
 import "./list.css";
 
-function List() {
+function List({listTransactions, setListTransactions, setFilter}) {
+  function handleFilter(type){
+    const filter = listTransactions.filter((item) => {
+      if(type === "todos"){
+        return listTransactions
+      }else{
+        return item.type === type
+      }
+    })
+    setFilter(filter)
+  }
+
   return (
-    <div className="geral">
+    <div className="geralList">
       <p>Resumo Financeiro</p>
       <div className="list">
-        <ul>
-          <li>Todos</li>
-          <li>Entradas</li>
-          <li>Despesas</li>
-        </ul>
+        <button onClick={()=> handleFilter("todos")}>Todos</button>
+        <button onClick={()=> handleFilter("entrada")}>Entrada</button>
+        <button onClick={()=> handleFilter("saida")}>Despesa</button>
       </div>
     </div>
   );

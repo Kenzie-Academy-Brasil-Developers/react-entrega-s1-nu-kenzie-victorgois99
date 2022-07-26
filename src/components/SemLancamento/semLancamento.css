@@ -1,0 +1,11 @@
+*{
+    font-family: "Nunito";
+}
+
+h1{
+    color: #343A40;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 20px;
+    /* display: none; */
+}
