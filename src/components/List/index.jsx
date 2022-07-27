@@ -17,8 +17,8 @@ function List({listTransactions, setListTransactions, setFilter}) {
       <p>Resumo Financeiro</p>
       <div className="list">
         <button onClick={()=> handleFilter("todos")}>Todos</button>
-        <button onClick={()=> handleFilter("entrada")}>Entrada</button>
-        <button onClick={()=> handleFilter("saida")}>Despesa</button>
+        <button onClick={()=> handleFilter("Entrada")}>Entrada</button>
+        <button onClick={()=> handleFilter("Saida")}>Despesa</button>
       </div>
     </div>
   );

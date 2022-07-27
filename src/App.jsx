@@ -1,11 +1,13 @@
 import { useState } from "react";
 import "./App.css";
 import Form from "./components/Form";
-import logoHeader from "./assets/NuKenzie-black.svg";
+import logoHeader from "./assets/img/NuKenzie-black.svg";
+import logoLogin from "./assets/img/NuKenzie-white.svg";
 import TotalMoney from "./components/TotalMoney";
 import List from "./components/List";
 import SemLancamento from "./components/SemLancamento";
 import Card from "./components/Card";
+import image from "./assets/img/image.svg"
 
 function App() {
   const [listTransactions, setListTransactions] = useState([]);
@@ -57,8 +59,18 @@ function App() {
           </div>
         </div>
       ) : (
-        <div className="login">
-          <button onClick={() => setLogged(!logged)}>Iniciar</button>
+        <div className="loginGeral">
+          <div className="login">
+            <div className="nu">
+              <img src={logoLogin} alt="" />
+              <h1>Centralize o controle das suas finanças</h1>
+              <p>de forma rapida e segura</p>
+              <button onClick={() => setLogged(!logged)}>Iniciar</button>
+            </div>
+              <div className="divImg">
+                <img src={image} alt="" />
+              </div>
+          </div>
         </div>
       )}
     </>

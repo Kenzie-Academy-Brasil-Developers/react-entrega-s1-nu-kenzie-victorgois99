@@ -5,7 +5,7 @@
   box-shadow: 0px 4px 32px -12px rgba(0, 0, 0, 0.25);
 }
 
-.App-header div{
+.App-header div {
   display: flex;
   justify-content: space-between;
   width: 70%;
@@ -20,32 +20,103 @@
   padding: 10px;
 }
 
-.App-header button:hover{
+.App-header button:hover {
   background-color: #fd377e;
   color: #e9ecef;
 }
 
-main{
+main {
   width: 70%;
   margin: 40px auto 0;
 }
 
-.divPrincipal{
+.divPrincipal {
   display: flex;
   width: 100%;
 }
 
-.divMainAside{
+.divMainAside {
   display: flex;
   justify-content: space-between;
   width: 84%;
 }
 
-.divMainAside main{
+.divMainAside main {
   margin: 0 auto;
   width: 60%;
 }
 
-.divMainAside aside{
+.divMainAside aside {
   width: 40%;
+}
+
+/* LOGIN */
+
+.loginGeral {
+  background-color: #212529;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.login {
+  display: flex;
+  width: 60%;
+  align-items: center;
+}
+
+.nu {
+  width: 40%;
+}
+
+.nu img{
+  margin-bottom: 20px;
+}
+
+.nu h1 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: "Nunito";
+  font-weight: 800;
+  font-size: 38px;
+  color: #ffffff;
+}
+
+.nu p {
+  font-family: "Nunito";
+  font-weight: normal;
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 20px;
+
+}
+
+.nu button {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  background-color: #fd377e;
+  border: 2px solid #fd377e;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.nu button:hover{
+  background-color: #ffffff;
+  color: #fd377e;
+  border: 2px solid #ffffff;
+}
+
+.divImg {
+  width: 60%;
+}
+
+.divImg h2 {
+  color: #ffffff;
 }

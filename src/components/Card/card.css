@@ -1,0 +1,51 @@
+*{
+    font-family: "Nunito";
+}
+
+.card{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 4px;
+}
+
+.text{
+    margin: 20px 10px ;
+    width: 50%;
+}
+
+.description{
+    color: #212529;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.type{
+    color: #343A40;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.value{
+    display: flex;
+    align-items: center;
+}
+
+.value p{
+    color: #212529;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+}
+
+.button button{
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}

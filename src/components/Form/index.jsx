@@ -4,7 +4,7 @@ import "./style.css";
 function Form({listTransactions, setListTransactions, setFilter}) {
   const [description, setDescription] = useState("")
   const [value, setValue] = useState("")
-  const [type, setType] = useState("entrada")
+  const [type, setType] = useState("Entrada")
 
   function handleSubmit(event){
     event.preventDefault()
@@ -13,13 +13,13 @@ function Form({listTransactions, setListTransactions, setFilter}) {
     setListTransactions([...listTransactions, {
       id: id,
       description: description,
-      value: type === "entrada" ? value : - value,
+      value: type === "Entrada" ? value : - value,
       type: type
     }])
     setFilter([...listTransactions, {
       id: id,
       description: description,
-      value: type === "entrada" ? value : - value,
+      value: type === "Entrada" ? value : - value,
       type: type
     }])
   }
@@ -50,8 +50,8 @@ function Form({listTransactions, setListTransactions, setFilter}) {
           <select name="" id=""
           onChange={(event) => setType(event.target.value)}
           >
-            <option value="entrada">Entrada</option>
-            <option value="saida">Despesa</option>
+            <option value="Entrada">Entrada</option>
+            <option value="Saida">Despesa</option>
           </select>
         </div>
       </div>
